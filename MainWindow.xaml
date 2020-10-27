@@ -1,0 +1,60 @@
+﻿<Window 
+       x:Class="WpfTestingSample.MainWindow"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:WpfTestingSample"
+        Title="MainWindow" >
+
+    <Window.DataContext>
+        <local:Viewmodel/>
+    </Window.DataContext>
+    
+ 
+    <Grid>
+
+        <syncfusion:SfDataGrid x:Name="datagrid" 
+                                        ItemsSource="{Binding GDCSource}"
+                                        AllowEditing="True"  IsGroupDropAreaExpanded="True"
+                                        LiveDataUpdateMode="AllowDataShaping"
+                                        AllowGrouping="True" 
+                                        ShowGroupDropArea="True">
+            <syncfusion:SfDataGrid.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.MergedDictionaries>
+                        <ResourceDictionary Source="/GroupDropAreaStyle.xaml" />
+                    </ResourceDictionary.MergedDictionaries>
+                </ResourceDictionary>
+            </syncfusion:SfDataGrid.Resources>
+            <syncfusion:SfDataGrid.GroupColumnDescriptions>
+                <syncfusion:GroupColumnDescription ColumnName="EmployeeName"/>
+                <syncfusion:GroupColumnDescription ColumnName="EmployeeDesignation"/>
+                <syncfusion:GroupColumnDescription ColumnName="EmployeeNative"/>
+                <syncfusion:GroupColumnDescription ColumnName="Experience"/>
+                <syncfusion:GroupColumnDescription ColumnName="Address"/>
+                <syncfusion:GroupColumnDescription ColumnName="EmployeeSalary"/>
+                <syncfusion:GroupColumnDescription ColumnName="EmployeeCity"/>
+                <syncfusion:GroupColumnDescription ColumnName="EmployeeName1"/>
+                <syncfusion:GroupColumnDescription ColumnName="EmployeeName6"/>
+                <syncfusion:GroupColumnDescription ColumnName="EmployeeName7"/>
+            </syncfusion:SfDataGrid.GroupColumnDescriptions>
+
+            <syncfusion:SfDataGrid.Columns>
+                        <syncfusion:GridTextColumn MappingName="EmployeeName"  />
+                <syncfusion:GridTextColumn MappingName="EmployeeDesignation"/>
+                <syncfusion:GridTextColumn MappingName="EmployeeNative"/>
+                <syncfusion:GridTextColumn MappingName="Experience"/>
+                <syncfusion:GridTextColumn MappingName="Address"/>
+                <syncfusion:GridTextColumn MappingName="EmployeeSalary"/>
+                <syncfusion:GridTextColumn MappingName="EmployeeCity"/>
+                <syncfusion:GridTextColumn MappingName="EmployeeName6"  />
+
+                <syncfusion:GridTextColumn MappingName="EmployeeName1"/>
+                        <syncfusion:GridTextColumn MappingName="EmployeeName7"/>
+           </syncfusion:SfDataGrid.Columns>
+
+        </syncfusion:SfDataGrid>
+
+       
+    </Grid>
+  </Window>
