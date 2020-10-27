@@ -3,7 +3,7 @@ How to enable the horizontal scroll bar in WPF DataGrid (SfDataGrid) GropDropAre
 
 By default, the scroll bar for GroupDropArea will be enabled. To avail horizontal scroll bar in GroupDropArea, the default style of ScrollViewer for GroupDropArea can be customized with ScrollbarVisibility as true.
 
-```
+```xaml
 <ScrollViewer x:Name="PART_ScrollViewer"
               CanContentScroll="True" 
               FlowDirection="{TemplateBinding FlowDirection}"
