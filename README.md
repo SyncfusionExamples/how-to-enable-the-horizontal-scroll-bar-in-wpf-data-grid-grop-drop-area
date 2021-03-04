@@ -1,7 +1,8 @@
 # How to enable the horizontal scroll bar in WPF DataGrid (SfDataGrid) GropDropArea?
-How to enable the horizontal scroll bar in WPF DataGrid (SfDataGrid) GropDropArea?
 
-By default, the scroll bar for GroupDropArea is disabled in [WPF DataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) (SfDataGrid). To enable the horizontal scroll bar in GroupDropArea, the default style of ScrollViewer for GroupDropArea can be customized with ScrollbarVisibility as true.
+This sample show cases how to enable the horizontal scroll bar in [WPF DataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) (SfDataGrid) GropDropArea?
+
+The scroll bar for [GroupDropArea](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupDropArea.html) is disabled in [WPF DataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) (SfDataGrid). To enable the horizontal scroll bar in `GroupDropArea`, the default style of ScrollViewer for `GroupDropArea` can be customized with `ScrollbarVisibility` as true.
 
 ```xaml
 <ScrollViewer x:Name="PART_ScrollViewer"
