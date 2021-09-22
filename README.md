@@ -30,3 +30,6 @@ The scroll bar for [GroupDropArea](https://help.syncfusion.com/cr/wpf/Syncfusion
 ```
 
 ![GroupDropArea](GroupDropArea.png)
+
+KB article - [How to enable the horizontal scroll bar in WPF DataGrid (SfDataGrid) GropDropArea?](https://www.syncfusion.com/kb/12013/how-to-enable-the-horizontal-scroll-bar-in-wpf-datagrid-sfdatagrid-groupdroparea)
+
